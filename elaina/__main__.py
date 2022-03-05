@@ -99,12 +99,12 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hallo [👋](https://telegra.ph/file/7482398e772bd21a1f2bb.jpg) {},
+Hallo [👋](https://telegra.ph/file/d913d10e4689ea261c5ed.jpg) {},
 Im Powerfull Management Bot And I Will Help In Managing Your Group.
 ┏━━━━━━━━•❃°•°❀°•°❃•━━━━━━━━┓
 × *Server Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
-× *Maintained by:* [Zenitsu Prjkt](https://t.me/ZenitsuPrjkt)
+× *Maintained by:* [Ryu Prjkt](https://t.me/bitchmtfkrs)
 ┗━━━━━━━━•❃°•°❀°•°❃•━━━━━━━━┛
 """
 
@@ -116,7 +116,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="🤖 About", callback_data="elaina_"),
-        InlineKeyboardButton(text="🛡 ️Federation", url="https://t.me/WolfOsFederation"),
+        InlineKeyboardButton(text="🛡 ️Federation", url="https://t.me/animelovin"),
     ],
     [
         InlineKeyboardButton(text="❔ Help", callback_data="help_back"),
@@ -127,10 +127,10 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-ELAINA_IMG = "https://telegra.ph/file/69f0dec8ffffa63b92f3d.jpg"
+ELAINA_IMG = "https://telegra.ph/file/d913d10e4689ea261c5ed.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @ZenitsuPrjkt \
+ You can support the project by contacting @bitchmtfkrs \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -468,23 +468,23 @@ def elaina_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Zenitsu Prjkt", url="https://github.com/ZenitsuPrjkt"
+                            text="Ryu Prjkt", url="https://github.com/Fanzzzzzzv"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="sena-ex", url="https://github.com/kennedy-ex"
+                            text="Fanz", url="https://github.com/Fanzzzzzzv"
                         ),
                         InlineKeyboardButton(
-                            text="TheHamkerCat", url="https://github.com/TheHamkerCat"
+                            text="fanz", url="https://github.com/Fanzzzzzzv"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Feri", url="https://github.com/FeriEXP"
+                            text="Fanz", url="https://github.com/Fanzzzzzzv"
                         ),
                         InlineKeyboardButton(
-                            text="riz-ex", url="https://github.com/riz-ex"
+                            text="fanzz", url="https://github.com/Fanzzzzzzv"
                         ),
                     ],
                     [
