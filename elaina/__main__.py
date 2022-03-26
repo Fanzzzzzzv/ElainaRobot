@@ -99,27 +99,27 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hallo [👋](https://telegra.ph/file/d913d10e4689ea261c5ed.jpg) {},
-Im Powerfull Management Bot And I Will Help In Managing Your Group.
+Hallo [👋](https://telegra.ph/file/6c244c54db0f0a9cf8331.jpg) {},
+Saya Sento Isuzu , Saya Adalah Bot Grup Manager Yang Akan Membantumu Menyesuaikan Grup Mu !.
 ┏━━━━━━━━•❃°•°❀°•°❃•━━━━━━━━┓
-× *Server Uptime:* `{}`
-× `{}` *users, across* `{}` *chats.*
-× *Maintained by:* [Ryu Prjkt](https://t.me/bitchmtfkrs)
+× *BOT AKTIF DAN BERJALAN:* `{}`
+× `{}` *PENGGUNA AKTIF* `{}` *OBROLAN AKTIF.*
+× *Maintained by:* [Ryu Prjkt](https://t.me/ryuzirou)
 ┗━━━━━━━━•❃°•°❀°•°❃•━━━━━━━━┛
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="🎉 Add Me To Your Group", url="t.me/ElainaPrjktRobot?startgroup=new"
+            text="🎉 Tambahkan Saya Ke Grup Mu!", url="t.me/ElainaPrjktRobot?startgroup=new"
         ),
     ],
     [
-        InlineKeyboardButton(text="🤖 About", callback_data="elaina_"),
-        InlineKeyboardButton(text="🛡 ️Federation", url="https://t.me/animelovin"),
+        InlineKeyboardButton(text="🤖 Tentang", callback_data="elaina_"),
+        InlineKeyboardButton(text="🛡 ️Federasi", url="https://t.me/animelovin"),
     ],
     [
-        InlineKeyboardButton(text="❔ Help", callback_data="help_back"),
+        InlineKeyboardButton(text="❔ Bantuan", callback_data="help_back"),
     ],
 ]
 
@@ -127,11 +127,10 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-ELAINA_IMG = "https://telegra.ph/file/d913d10e4689ea261c5ed.jpg"
+ELAINA_IMG = "https://telegra.ph/file/6c244c54db0f0a9cf8331.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @bitchmtfkrs \
- Supporting isnt always financial! \
+DONATE_STRING = """Hey , Senang Bertemu Dengan Mu , Support @ryuzirou Untuk Terus Mengembangkan Bot Nya! \
+ Agar Tetap Bisa Berjalan ! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
@@ -247,7 +246,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"👋 Hi, I'm {dispatcher.bot.first_name}. Nice to meet You.",
+            f"👋 Hi, Aku {dispatcher.bot.first_name}.Senang Bertemu DenganMu !.",
             parse_mode=ParseMode.HTML,
         )
 
@@ -378,7 +377,7 @@ def elaina_about_callback(update, context):
     query = update.callback_query
     if query.data == "elaina_":
         query.message.edit_text(
-            text="I'm *Elaina*, a powerful group management bot built to help you manage your group easily."
+            text="I'm *Sento Isuzu*, a powerful group management bot built to help you manage your group easily."
             "\n× I can restrict users."
             "\n× I can greet users with customizable welcome messages and even set a group's rules."
             "\n× I have an advanced anti-flood system."
