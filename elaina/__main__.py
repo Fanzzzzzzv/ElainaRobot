@@ -100,7 +100,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hallo [👋](https://telegra.ph/file/6c244c54db0f0a9cf8331.jpg) {},
-Saya Sento Isuzu , Saya Adalah Bot Grup Manager Yang Akan Membantumu Menyesuaikan Grup Mu !.
+Saya Hitomi ひとみ , Saya Adalah Bot Grup Manager Yang Akan Membantumu Menyesuaikan Grup Mu !.
 ┏━━━━━━━━•❃°•°❀°•°❃•━━━━━━━━┓
 × *BOT AKTIF DAN BERJALAN:* `{}`
 × `{}` *PENGGUNA AKTIF* `{}` *OBROLAN AKTIF.*
@@ -827,7 +827,7 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             dispatcher.bot.sendMessage(
-                f"@{SUPPORT_CHAT}", "👋 Hi, i'm alive.", parse_mode=ParseMode.MARKDOWN
+                f"@{SUPPORT_CHAT}", "👋 Hi Semuanya Aku Sudah Aktif Kembali.", parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
             LOGGER.warning(
